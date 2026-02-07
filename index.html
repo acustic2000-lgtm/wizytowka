@@ -7,36 +7,33 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="container">
+    <div class="topbar">
+      <div>
+        <h1>Jan Kowalski</h1>
+        <p class="subtitle">Web Developer | Projekty stron i aplikacji</p>
+      </div>
 
-  <div class="container">
-  <div class="container">
-  <div class="topbar">
-    <div>
-      <h1>Jan Kowalski</h1>
-      <p class="subtitle">Web Developer | Projekty stron i aplikacji</p>
+      <button class="themeBtn" onclick="toggleTheme()" aria-label="Zmień motyw">
+        🌙
+      </button>
     </div>
 
-    <button class="themeBtn" onclick="toggleTheme()" aria-label="Zmień motyw">
-      🌙
-    </button>
-  </div>
+    <section>
+      <h2>O mnie</h2>
+      <p>
+        Tworzę proste i nowoczesne strony internetowe.
+        Pomagam małym firmom zaistnieć w sieci.
+      </p>
+    </section>
 
-  <section>
-    <h2>O mnie</h2>
-    <p>
-      Tworzę proste i nowoczesne strony internetowe.
-      Pomagam małym firmom zaistnieć w sieci.
-    </p>
-  </section>
-
-  <section>
-    <h2>Kontakt</h2>
-    <input id="email" type="email" placeholder="Twój email" />
-    <textarea id="wiadomosc" placeholder="Twoja wiadomość"></textarea>
-    <button onclick="wyslij()">Wyślij wiadomość</button>
-    <p id="status"></p>
-  </section>
-</div>
+    <section>
+      <h2>Kontakt</h2>
+      <input id="email" type="email" placeholder="Twój email" />
+      <textarea id="wiadomosc" placeholder="Twoja wiadomość"></textarea>
+      <button onclick="wyslij()">Wyślij wiadomość</button>
+      <p id="status"></p>
+    </section>
   </div>
 
   <script src="script.js"></script>
