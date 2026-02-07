@@ -44,7 +44,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 24px;
   transition:
     background 200ms ease,
     color 200ms ease;
@@ -55,7 +55,7 @@ body {
   padding: 32px;
   border-radius: 16px;
   width: 100%;
-  max-width: 460px;
+  max-width: 500px;
   box-shadow: 0 20px 40px var(--shadow);
   transition:
     background 200ms ease,
@@ -194,13 +194,13 @@ body.theme-changing .container {
 body.theme-changing .container {
   opacity: 0.96;
 }
-/* Shine effect na przycisku */
-button {
+/* Shine effect na przycisku formularza */
+section button {
   position: relative;
   overflow: hidden; /* żeby blask nie wychodził poza przycisk */
 }
 
-button::after {
+section button::after {
   content: "";
   position: absolute;
   top: 0;
@@ -217,9 +217,28 @@ button::after {
   opacity: 0;
 }
 
-button:hover::after {
+section button:hover::after {
   animation: shine 900ms cubic-bezier(0.22, 1, 0.36, 1);
   opacity: 1;
+}
+
+
+
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 24px 18px;
+    border-radius: 14px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
 }
 
 @keyframes shine {
